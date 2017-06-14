@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>TEI-slides tutorial</title>
+            <author>Agnes Seipelt</author>
+            <author>Peter Stadler</author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Virtueller Forschungsverbund Edirom</publisher>
+            <availability>
+               <licence target="https://raw.githubusercontent.com/Edirom/TEI-slides/master/LICENSE">
+                  <p>Available under a MIT License</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>born digital</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div rend="section">
+            <head>What's the purpose?</head>
+            <div rend="slide">
+               <head>TEI driven slides</head>
+               <p>Why do you want to do this?</p>
+               <p>Because it makes your presentations reusable! 
+                  You do not need to worry about proprietary formats and im- and exporting, just
+                  use the <ref target="http://tei-c.org">standard for text encoding</ref> and get a true single source publishing workflow.  
+               </p>
+            </div>
+            <div rend="slide">
+               <head>A dedicated schema for slides</head>
+               <p>There's a formal description of the TEI slides markup written in ODD, 
+                  facilitating the authoring of the slides in your favorite (schema-aware) XML editor 
+                  and making it easy for others to transform your presentations to other formats.</p>
+            </div>
+            <div rend="slide">
+               <head>Modern web based display</head>
+               <p>Using <ref target="https://github.com/TEIC/CETEIcean">CETEIcean</ref> and <ref target="https://github.com/hakimel/reveal.js">reveal.js</ref> it's simple to create beautiful online presentations from the TEI slides markup.</p>
+            </div>
+         </div>
+         <div rend="section">
+            <head>Features</head>
+            <div rend="slide">
+               <head>Lists</head>
+               <list type="gloss">
+                  <label>ordered lists</label>
+                  <item>are of type <code>list rend="numbered"</code></item>
+                  <label>gloss</label>
+                  <item>are of type <code>list type="gloss"</code></item>
+               </list>
+            </div>
+         </div>
+      </body>
+  </text>
+</TEI>
